@@ -1,0 +1,17 @@
+CREATE TABLE `books` (
+  `id` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(255) NOT NULL,
+  `author_id` int(11) UNSIGNED NOT NULL,
+  `publisher_id` int(11) UNSIGNED NOT NULL,
+  `quantity` int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `authors` (
+  `id` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `publishers` (
+  `id` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
